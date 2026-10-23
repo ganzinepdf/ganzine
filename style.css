@@ -110,7 +110,7 @@ p { max-width: 62ch; margin: 0 0 1rem; }
 
 /* Edição */
 #edicao { background: var(--papel); }
-.cartas { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 10rem)); gap: 1.2rem; margin-top: 2rem; }
+.cartas { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr); gap: 1.2rem; margin-top: 2rem; }
 .carta { padding: 1.2rem; border: 3px solid var(--tinta); border-radius: 18px; }
 .carta:nth-child(1) { background: var(--manteiga); }
 .carta:nth-child(2) { background: var(--lilas); }
