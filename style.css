@@ -14,7 +14,8 @@ text-decoration: none;
 --texto: "Bricolage Grotesque", system-ui, sans-serif;
 }
 img {
-      width: 37rem;
+max-width: 37rem;
+      
     max-width: 100%;
     height: auto;
     display: block;
