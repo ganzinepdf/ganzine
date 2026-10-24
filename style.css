@@ -13,7 +13,11 @@ text-decoration: none;
 --display: "Bagel Fat One", "Arial Rounded MT Bold", system-ui, sans-serif;
 --texto: "Bricolage Grotesque", system-ui, sans-serif;
 }
-
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Prevents unwanted bottom spacing */
+}
 html { scroll-behavior: smooth; scroll-padding-top: calc(var(--altura-header) + 12px); }
 body {
 margin: 0;
