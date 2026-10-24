@@ -14,9 +14,10 @@ text-decoration: none;
 --texto: "Bricolage Grotesque", system-ui, sans-serif;
 }
 img {
+      width: 37rem;
     max-width: 100%;
     height: auto;
-    display: block; /* Prevents unwanted bottom spacing */
+    display: block;
 }
 html { scroll-behavior: smooth; scroll-padding-top: calc(var(--altura-header) + 12px); }
 body {
