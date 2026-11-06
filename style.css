@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Bricolage+Grotesque:wght@400;600&display=swap");
 
+
+
+
 .a {
 text-decoration: none;
 }
@@ -12,6 +15,9 @@ text-decoration: none;
 --altura-header: 64px;
 --display: "Bagel Fat One", "Arial Rounded MT Bold", system-ui, sans-serif;
 --texto: "Bricolage Grotesque", system-ui, sans-serif;
+}
+hr {
+ color: var(--tinta),
 }
 img {
 max-width: 37rem;
