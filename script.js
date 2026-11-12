@@ -17,3 +17,12 @@ function aoRolar() {
 window.addEventListener("scroll", aoRolar, { passive: true });
 window.addEventListener("resize", aoRolar);
 aoRolar();
+
+function openForm() {
+  document.getElementById("Accedi").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("Accedi").style.display = "none";
+}
+
