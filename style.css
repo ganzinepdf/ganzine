@@ -169,4 +169,14 @@ html { scroll-behavior: auto; }
 .botao { transition: none; }
 }
 .final { padding: 1.4rem 0; border-top: 3px solid var(--papel); }
-#nova1 { background: var(--manteiga); }
+#nova1 { background: var(--manteiga); }+ù
+.Accedi {
+  display: none; /* Oculto por padrão */
+  position: fixed;
+  top: 80px;
+  right: 15px;
+  border: 3px solid var(--tinta);
+ background-color: var(--papel);
+ border-radius: 18px;
+ padding:2%;
+}
