@@ -28,10 +28,27 @@ function openForm() {
     }
 }
 
-function closeForm() {
-  document.getElementById("Accedi").style.display = "none";
+let usuarios = {
+
+    "Bernardo": "admin",
+
+    "Davide": "elcap0",
+
+  
 }
 
+function login() {
+
+    let id = document.getElementById("ganzineId").value;
+    let senha = document.getElementById("password").value;
+
+    if (usuarios[id] === senha) {
+        window.location.href = "admin.html";
+    } else {
+        alert("Ganzine.id o password errati!");
+    }
+
+}
 
 
   
