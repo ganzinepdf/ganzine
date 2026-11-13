@@ -187,10 +187,7 @@ html { scroll-behavior: auto; }
  max-width: 11rem;
  
 }
-hr {
- color: var(--tinta);
- width:3px;
-}
+
 #caixa {
  border: 3px solid var(--tinta);
  background-color: var(--papel);
