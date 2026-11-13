@@ -183,5 +183,7 @@ html { scroll-behavior: auto; }
  background-color: var(--papel);
  border-radius: 18px;
  padding:2%;
- box-shadow: 2px 2px 0 var(--tinta);
+ box-shadow: 5px 5px 0 var(--tinta);
+ max-width: 10rem;
+ 
 }
