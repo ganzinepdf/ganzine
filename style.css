@@ -182,3 +182,14 @@ html { scroll-behavior: auto; }
  border-radius: 18px;
  padding:2%;
 }
+
+#Accedi {
+  display: none; /* Oculto por padrão */
+  position: fixed;
+  top: 80px;
+  right: 15px;
+  border: 3px solid var(--tinta);
+ background-color: var(--papel);
+ border-radius: 18px;
+ padding:2%;
+}
