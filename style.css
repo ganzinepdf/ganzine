@@ -172,24 +172,16 @@ html { scroll-behavior: auto; }
 #nova1 { background: var(--manteiga); }
 
 
-.Accedi {
-  display: none; /* Oculto por padrão */
-  position: fixed;
-  top: 80px;
-  right: 15px;
-  border: 3px solid var(--tinta);
- background-color: var(--papel);
- border-radius: 18px;
- padding:2%;
-}
+
 
 #Accedi {
-  display: none; /* Oculto por padrão */
-  position: fixed;
-  top: 80px;
-  right: 15px;
-  border: 3px solid var(--tinta);
+ display: none; /* Oculto por padrão */
+ position: fixed;
+ top: 80px;
+ right: 15px;
+ border: 3px solid var(--tinta);
  background-color: var(--papel);
  border-radius: 18px;
  padding:2%;
+ box-shadow: 2px 2px 0 var(--tinta);
 }
