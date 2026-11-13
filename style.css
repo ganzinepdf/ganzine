@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Bricolage+Grotesque:wght@400;600&display=swap");
 
 
-
+#fotinha {
+ border: 3px solid var(--tinta);
+}
 
 .a {
 text-decoration: none;
