@@ -18,11 +18,21 @@ window.addEventListener("scroll", aoRolar, { passive: true });
 window.addEventListener("resize", aoRolar);
 aoRolar();
 
+const accedi = document.getElementById('Accedi');
+
 function openForm() {
-  document.getElementById("Accedi").style.display = "block";
+    if (accedi.style.display === 'none') {
+      accedi.style.display = 'block';
+    } else {
+      accedi.style.display = 'none';
+    }
 }
 
 function closeForm() {
   document.getElementById("Accedi").style.display = "none";
 }
 
+
+
+  
+  
