@@ -184,7 +184,7 @@ html { scroll-behavior: auto; }
  border-radius: 18px;
  padding:2%;
  box-shadow: 5px 5px 0 var(--tinta);
- max-width: 10rem;
+ max-width: 11rem;
  
 }
 hr {
@@ -197,6 +197,4 @@ hr {
  border-radius: 8px;
  padding: 2%;
  box-shadow: 2px 2px 0 var(--tinta);
- margin-left: 1rem;
- margin-right: 1rem;
 }
