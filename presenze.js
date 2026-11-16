@@ -1,16 +1,5 @@
 "use strict";
 
-const Chamada = document.getElementByClassName('Chamada');
-
-function chamadaLista() {
-    if (Chamada.style.display === 'none') {
-      Chamada.style.display = 'block';
-    } Chamada {
-      accedi.style.display = 'none';
-    }
-}
-
-
 (function () {
   /* ---------- Dados ---------- */
   var CHAVE = "ganzine_presenze_v1";
