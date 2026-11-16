@@ -204,3 +204,51 @@ html { scroll-behavior: auto; }
  padding: 2%;
  box-shadow: 2px 2px 0 var(--tinta);
 }
+
+
+/* Stili specifici della lista di presenza: usa i colori e i font di style.css */
+.chiamata-main { padding-top: var(--altura-header); }
+.chiamata-sezione { background: var(--rosa); min-height: calc(100vh - var(--altura-header)); padding: clamp(2rem, 6vw, 4rem) clamp(1rem, 6vw, 4rem); }
+.chiamata-titolo, .pannello-chiamata, .pannello-storico, .nota-locale { max-width: 58rem; margin: 0 auto 1.5rem; }
+.chiamata-titolo { padding: 1rem 0 1.5rem; }
+.chiamata-titolo h1 { margin-bottom: 1rem; }
+.sovratitolo { font-size: .78rem; font-weight: 700; letter-spacing: .14em; margin-bottom: .5rem; }
+.pannello-chiamata, .pannello-storico { background: var(--papel); border: 3px solid var(--tinta); border-radius: 18px; padding: clamp(1rem, 4vw, 2rem); box-shadow: 7px 7px 0 var(--tinta); }
+.riga-data { display: grid; gap: .45rem; max-width: 18rem; font-weight: 600; }
+.riga-data input, .strumenti-lista input, .storico-controlli select { width: 100%; box-sizing: border-box; padding: .7rem .8rem; border: 2px solid var(--tinta); border-radius: 9px; background: white; color: var(--tinta); font: inherit; }
+.riepilogo { display: grid; grid-template-columns: repeat(3, 1fr); gap: .7rem; margin: 1.4rem 0; }
+.riepilogo div { display: grid; text-align: center; padding: .8rem .3rem; border: 2px solid var(--tinta); border-radius: 12px; background: var(--manteiga); }
+.riepilogo strong { font: 2rem var(--display); line-height: 1.2; }
+.riepilogo span { font-size: .85rem; font-weight: 600; }
+.strumenti-lista { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1.2rem 0; }
+.strumenti-lista input { flex: 1 1 13rem; }
+.azione { border: 2px solid var(--tinta); border-radius: 999px; padding: .65rem 1rem; font: 600 .95rem var(--texto); cursor: pointer; transition: transform .15s, box-shadow .15s; }
+.azione:hover { transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--tinta); }
+.azione:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid var(--rosa); outline-offset: 2px; }
+.secondaria { background: var(--lilas); color: var(--tinta); }
+.principale { background: var(--rosa); color: var(--tinta); box-shadow: 3px 3px 0 var(--tinta); }
+.pericolo { background: #fff; color: #9b174f; }
+.lista-persone { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: .55rem; }
+.persona { display: flex; align-items: center; gap: .7rem; padding: .7rem .8rem; border: 2px solid var(--tinta); border-radius: 10px; background: white; cursor: pointer; }
+.persona:has(input:checked) { background: #e8f4ff; }
+.persona input { width: 1.15rem; height: 1.15rem; accent-color: var(--lilas); flex: 0 0 auto; }
+.persona span { display: block; font-weight: 600; line-height: 1.25; }
+.persona small { display: block; font-weight: 400; opacity: .8; }
+.azioni-principali { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; margin-top: 1.4rem; }
+#messaggio { font-weight: 600; }
+.pannello-storico { display: grid; grid-template-columns: 1fr minmax(15rem, .8fr); gap: 1.5rem; }
+.pannello-storico h2 { font-size: clamp(1.7rem, 4vw, 2.4rem); }
+.storico-controlli { display: grid; align-content: start; gap: .6rem; }
+.storico-controlli label { font-weight: 600; }
+.azioni-storico { display: flex; flex-wrap: wrap; gap: .5rem; }
+.dettaglio-storico { grid-column: 1 / -1; border-top: 2px solid var(--tinta); padding-top: 1rem; }
+.dettaglio-storico ul { columns: 2; padding-left: 1.2rem; }
+.dettaglio-storico li { break-inside: avoid; margin-bottom: .25rem; }
+.nota-locale { font-size: .9rem; background: var(--papel); border: 2px dashed var(--tinta); border-radius: 12px; padding: 1rem; }
+footer { margin: 0; }
+@media (max-width: 640px) {
+  .pannello-storico { grid-template-columns: 1fr; }
+  .dettaglio-storico { grid-column: auto; }
+  .dettaglio-storico ul { columns: 1; }
+  .riepilogo strong { font-size: 1.6rem; }
+}
