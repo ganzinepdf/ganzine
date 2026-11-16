@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chiamata · ganzine.pdf</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chiamata.css">
+  <link rel="icon" href="images/icone1.png">
+</head>
+<body>
+  <header class="cabecalho">
+    <a class="logo" href="https://ganzinepdf.github.io/ganzine/">ganzine<span>.pdf</span></a>
+    <nav class="menu">
+      <a href="admin.html">Admin</a>
+      <a href="https://ganzinepdf.github.io/ganzine/">Sito</a>
+    </nav>
+  </header>
+
+  <main class="chiamata-main">
+    <section class="chiamata-sezione">
+      <div class="chiamata-titolo">
+        <p class="sovratitolo">GESTIONE REDAZIONE</p>
+        <h1>Lista di<br>presenza.</h1>
+        <p>Segna chi è venuto, salva la chiamata e consulta gli incontri passati.</p>
+      </div>
+
+      <div class="pannello-chiamata">
+        <div class="riga-data">
+          <label for="dataIncontro">Data dell'incontro (venerdì)</label>
+          <input type="date" id="dataIncontro">
+        </div>
+        <div class="riepilogo" aria-live="polite">
+          <div><strong id="presentiCount">0</strong><span>Presenti</span></div>
+          <div><strong id="assentiCount">24</strong><span>Non segnati</span></div>
+          <div><strong id="percentuale">0%</strong><span>Presenza</span></div>
+        </div>
+
+        <div class="strumenti-lista">
+          <input type="search" id="cercaPersona" placeholder="Cerca un nome..." aria-label="Cerca un nome">
+          <button type="button" id="tuttiPresenti" class="azione secondaria">Segna tutti</button>
+          <button type="button" id="nessunoPresente" class="azione secondaria">Azzera</button>
+        </div>
+
+        <div id="listaPersone" class="lista-persone"></div>
+
+        <div class="azioni-principali">
+          <button type="button" id="salvaChiamata" class="azione principale">Salva chiamata</button>
+          <span id="messaggio" role="status" aria-live="polite"></span>
+        </div>
+      </div>
+
+      <div class="pannello-storico">
+        <div>
+          <p class="sovratitolo">ARCHIVIO</p>
+          <h2>Incontri passati</h2>
+          <p>Seleziona una data per rivedere chi era presente.</p>
+        </div>
+        <div class="storico-controlli">
+          <label for="storicoDate">Chiamata salvata</label>
+          <select id="storicoDate">
+            <option value="">Nessuna chiamata salvata</option>
+          </select>
+          <div class="azioni-storico">
+            <button type="button" id="caricaStorico" class="azione secondaria">Apri chiamata</button>
+            <button type="button" id="eliminaStorico" class="azione pericolo">Elimina</button>
+          </div>
+          <button type="button" id="esportaCsv" class="azione secondaria">Esporta archivio CSV</button>
+        </div>
+        <div id="dettaglioStorico" class="dettaglio-storico">Le chiamate salvate appariranno qui.</div>
+      </div>
+      <p class="nota-locale"><strong>Nota:</strong> i dati vengono salvati in questo browser. Per condividerli tra più computer o telefoni serve un database online.</p>
+    </section>
+  </main>
+
+  <footer>ganzine.pdf · per e dagli alunni</footer>
+  <script src="chiamata.js"></script>
+</body>
+</html>
