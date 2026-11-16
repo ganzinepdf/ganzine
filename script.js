@@ -40,7 +40,7 @@ let usuarios = {
 function login() {
 
     let id = document.getElementById("ganzineId").value;
-    let senha = document.getElementById("password").value;
+    let senha = document.getElementById("caixa").value;
 
     if (usuarios[id] === senha) {
         window.location.href = "admin.html";
