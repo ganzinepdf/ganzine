@@ -128,7 +128,7 @@
         <div class="album-container">
   
   <div class="vinil"></div>
-  <img
+  <img id='musica1p'
     src="images/paistropical.jpg"
     alt="Copertina"
     class="capa-album"
@@ -206,6 +206,11 @@
 
 </body>
   <style>
+    .musica1p{
+   
+      z-index: 1;
+      
+    }
       .musica {
     background: linear-gradient(160deg, #1d1b2e, #3a2a5c);
     color: #fff;
@@ -216,6 +221,7 @@
     transition: transform .25s;
             width: 18rem;
       height: auto;
+        
   }
   .musica:hover { transform: translateY(-6px); }
   .vinil {
