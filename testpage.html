@@ -7,7 +7,7 @@
 
   <title>ganzine.pdf</title>
   <link rel="stylesheet" href="style.css">
-<link rel="icon" href="images/icone1.png">
+<link rel="icon" href="images/icone.png">
 </head>
 <body>
   <!-- O CABEÇÃO-->
@@ -19,27 +19,28 @@
       <a href="#edicao">Edizione</a>
       <a href="#materias">Articoli</a>
       <a href="#equipe">Team</a>
+         <a onclick="openForm()">Accedi</a>
       <a href="#participe">Incriversi</a>
-      <a onclick="openForm()">Accedi</a>
       <a href="https://www.artearezzo.it" target="_blank">Nostra Scuola</a>
     </nav>
     <div class="progresso"></div>
   </header>
   
-
 <!-- O Pop-up / Modal -->
 <div id="Accedi" class="Accedi">
   <form action="/login" method="post" class="form-container">
-    <h2>Login</h2>
-
+    <h3>Login</h3>
+ <hr>
     <label for="email"><b>Ganzine.id</b></label>
-    <input type="text" placeholder="ID" name="email" required>
+    <br>
+    <input id="ganzineId" type="text" placeholder="ID" name="email" required>
 
-   <br>
+   <br><br>
     <label for="password"><b>Password</b></label>
-    <input type="password" placeholder="Password" name="password" required>
-
-    <button type="submit" class="btn">Accedi</button>
+    <br>
+    <input id="caixa" type="password" placeholder="Password" name="password" required>
+<br> <br> 
+    <button type="button"  onclick="login()" class="botao">Accedi</button>
   </form>
 </div>
   
@@ -51,6 +52,7 @@
           <h1>ganzine</h1>
           <br>
           <p>Ciao! Siamo la rivista Ganzine.pdf. Rivista fatta dagli alluni e per gli alunni del Liceo Piero della Francesca, qui gli studenti hanno piena libertà di esprimersi e condividere conoscenze...</p>
+    
           <a class="botao" href="#edicao">Ultima Edizione</a>
         </div>
       </div>
@@ -98,6 +100,12 @@
           <p> Intervista con tutti candidati a rappresentanti d'Istituto.</p>
             <button class="botao"><a target="_blank" href="https://ganzinepdf.github.io/ganzine/intervistaRappresentanti.html"  style="color: #fff8fb; text-decoration: none;">Apri qui</a></button>
           </article>
+                <article class="materia">
+                 <h3>Campionato Nazionale & Olimpiadi di Storia dell'Arte </h3>
+          <small>Team News</small>
+          <p> Ecco tutte le info sul Campionato Nazionale & Olimpiadi di Storia dell'Arte </p>
+            <button class="botao"><a target="_blank" href="https://ganzinepdf.github.io/ganzine/olim27.html"  style="color: #fff8fb; text-decoration: none;">Apri qui</a></button>
+          </article>
        <!-- <article class="materia">
           <h3>Articolo 2</h3>
           <small>Davide Parlanti </small>
@@ -111,7 +119,32 @@
       </div> !-->
     </section>
 <!-- A EQUIPE -->
-
+<section id="edicao">
+  
+  <!-- MÚSICA -->
+  <h2 class="titulo">🎵 Música</h2>
+  <div class="grid">
+    <article class="musica">
+        <div class="album-container">
+  
+  <div class="vinil"></div>
+  <img
+    src="images/images.jpg"
+    alt="Capa do álbum"
+    class="capa-album"
+  >
+</div>
+      
+      <span class="tag">Álbum da semana</span>
+      <h3>Nome do Álbum</h3>
+      <div class="artista">Nome do Artista · 2024</div>
+      <p>Escreva aqui duas ou três linhas dizendo por que vale a pena ouvir.</p>
+      <div class="estrelas">★★★★☆</div>
+      <a class="ler-mais" href="#">Ler resenha →</a>
+      <div class="recomendado">Recomendado por: Aluno(a), 2º ano B</div>
+    </article>
+  </div>
+</section>
 
     <section id="equipe">
       <div class="conteudo">
@@ -147,7 +180,8 @@
             <li><strong>Melissa Quarata</strong>Redazione Artistica -- 5D1CS<p style="font-size: smaller;"></p></li>
           <li><strong>Samuele Zanchi</strong>Redazione Artistica -- 3FIG2</li>
           <li><strong>Andrea Nofri</strong>Redazione Artistica -- 4M1</li>
-          <li><strong>Giuggi Scricciolo</strong>Redazione Artistica -- 2M1</li>
+          <li><strong>Simone Falcinelli</strong>News -- 4M1</li>
+          
         </ul>
       </div>
     </section>
