@@ -123,7 +123,7 @@
   
   <!-- MÚSICA -->
   <h2 class="titulo">🎵 Música</h2>
-  <div class="grid">
+  <div class="grid" style=' border-radius: 5%;'>
     <article class="musica">
         <div class="album-container">
   
@@ -227,6 +227,17 @@
     box-shadow: 0 8px 24px rgba(0,0,0,.5);
     animation: girar 8s linear infinite;
     animation-play-state: paused;
+    z-index: 2;
+  }
+      :root {
+    --bg: #f6f3ee;
+    --texto: #1f1d1a;
+    --suave: #6b655c;
+    --destaque: #c8322b;
+    --card: #ffffff;
+    --borda: #e4ded3;
+    --raio: 14px;
+    --sombra: 0 6px 20px rgba(0,0,0,.08);
   }
   .musica:hover .vinil { animation-play-state: running; }
   @keyframes girar { to { transform: rotate(360deg); } }
