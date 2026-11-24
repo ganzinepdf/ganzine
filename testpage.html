@@ -122,12 +122,11 @@
 <section id="edicao">
   
   <!-- MÚSICA -->
-  <h2 class="titulo">🎵 Música</h2>
+
   <div class="grid" style=' border-radius: 5%;'>
     <article class="musica">
         <div class="album-container">
-  
-  <div class="vinil"></div>
+
   <img id='musica1p'
     src="images/paistropical.jpg"
     alt="Copertina"
@@ -140,7 +139,7 @@
       <div class="artista">Jorge Ben Jor · 1969</div>
       <p>Un classico del samba brasiliano. Jorge Ben Jor ci presenta lo spirito di vivere in un paese tropicale.</p>
       <div class="estrelas">★★★★★</div>
-      <a class="ler-mais" target="_blank" href="https://youtu.be/qkdbFsSIGSI?si=hcoTvBXCsxFe0r92">Ascoltare adesso →</a>
+      <a class="botao" target="_blank" href="https://youtu.be/qkdbFsSIGSI?si=hcoTvBXCsxFe0r92">Ascoltare adesso →</a>
       <div class="recomendado">Consigliato da: Bernardo Vignoli, 4BRC1</div>
     </article>
   </div>
@@ -212,7 +211,11 @@
     gap: 22px;
   }
     .musica1p{
-   
+     
+      display: flex;
+      align-self: center;
+      justify-content: center; 
+      
       z-index: 1;
       
     }
