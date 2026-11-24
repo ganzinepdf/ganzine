@@ -205,5 +205,35 @@
 
 
 </body>
+  <style>
+      .musica {
+    background: linear-gradient(160deg, #1d1b2e, #3a2a5c);
+    color: #fff;
+    border-radius: var(--raio);
+    padding: 22px;
+    box-shadow: var(--sombra);
+    text-align: center;
+    transition: transform .25s;
+  }
+  .musica:hover { transform: translateY(-6px); }
+  .vinil {
+    width: 150px; height: 150px; margin: 0 auto 18px;
+    border-radius: 50%;
+    background:
+      radial-gradient(circle, var(--destaque) 0 22%, #111 23% 26%, transparent 27%),
+      repeating-radial-gradient(circle, #111 0 3px, #222 4px 5px);
+    box-shadow: 0 8px 24px rgba(0,0,0,.5);
+    animation: girar 8s linear infinite;
+    animation-play-state: paused;
+  }
+  .musica:hover .vinil { animation-play-state: running; }
+  @keyframes girar { to { transform: rotate(360deg); } }
+  .musica .tag { color: #ffb3ae; }
+  .musica h3 { font-size: 1.2rem; margin: 6px 0 2px; }
+  .musica .artista { color: #cfc8e6; font-family: system-ui, sans-serif; font-size: .9rem; }
+  .musica p { font-size: .9rem; margin: 12px 0; color: #e6e1f5; }
+  .musica .ler-mais { color: #ffb3ae; }
+
+  </style>
 <script src="script.js"></script>
 </html>
