@@ -33,6 +33,8 @@ let usuarios = {
     "Bernardo": "admin",
 
     "Davide": "elcap0",
+  "Yottachoppa":"BKdonald's",
+  "Vannacci Rosa", "tru3cap0",
 
   
 }
